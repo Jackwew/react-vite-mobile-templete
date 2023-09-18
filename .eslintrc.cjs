@@ -36,5 +36,8 @@ module.exports = {
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   },
 };

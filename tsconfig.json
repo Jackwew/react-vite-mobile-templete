@@ -24,9 +24,9 @@
     "esModuleInterop": true,
     "baseUrl": ".",
   },
+  "path": {
+    "@/*": ["src/*"]
+  },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "path": {
-    "@/*": ["./src/*"]
-  },
 }
