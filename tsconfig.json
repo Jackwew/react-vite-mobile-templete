@@ -23,9 +23,9 @@
     "sourceMap": true,
     "esModuleInterop": true,
     "baseUrl": ".",
-  },
-  "path": {
-    "@/*": ["src/*"]
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],

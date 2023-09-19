@@ -1,18 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
-import Home from "../pages/home/index.tsx";
+import Home, { loader as homeLoader } from "../pages/home/index.tsx";
 import ErrorPage from "../pages/errorPage";
-import Test from "@/pages/test";
+import Chat, { loader as chatLoader } from "@/pages/chat";
 import Contact from "@/pages/contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+    loader: homeLoader,
     errorElement: <ErrorPage />,
   },
   {
-    path: "/test",
-    element: <Test />,
+    path: "chat/:chatId",
+    loader: chatLoader,
+    element: <Chat />,
   },
   {
     path: "contacts/:contactId",

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./index.scss";
 const Test = () => {
@@ -8,6 +8,7 @@ const Test = () => {
     <div className="test">
       测试页面
       <span className="test-scss">{testMessage}</span>
+      <span onClick={() => setTestMessage("value")}>改变</span>
     </div>
   );
 };

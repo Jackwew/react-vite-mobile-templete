@@ -1,35 +1,87 @@
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-container {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #e7f8ff;
+  display: flex;
+  flex-direction: column;
+  .home-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title-box {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      font-weight: bold;
+      .sub-title {
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+    .bot-svg {
+      width: 44px;
+      height: 44px;
+      position: relative;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
-  to {
-    transform: rotate(360deg);
+  .home-content {
+    flex: 1;
+    overflow: auto;
+    .chat-history {
+      background-color: #ffffff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      .chat-title {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .chat-desc {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #a6a6a6;
+      }
+    }
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .home-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    .options {
+      width: 70%;
+      display: flex;
+      .options-item {
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin-right: 20px;
+      }
+    }
+    .new-chat {
+      background-color: white;
+      flex: 1;
+      height: 35px;
+      padding: 5px;
+      line-height: 35px;
+      border-radius: 8px;
+      font-size: 14px;
+      text-align: center;
+    }
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
