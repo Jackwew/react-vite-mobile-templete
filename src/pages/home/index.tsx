@@ -34,8 +34,8 @@ function Home() {
                   >
                     <div className="chat-title">{chat.firstPrompt.slice(0, 10)}</div>
                     <div className="chat-desc">
-                      <div className="chat-number">{chat.count ?? 20}条聊天记录</div>
-                      <div className="chat-time">{dayjs(chat.createTime).format("YYYY-MM-DD HH:mm:ss")}</div>
+                      <div className="chat-number">{chat.chatCount}条聊天记录</div>
+                      <div className="chat-time">{dayjs(chat.lastDateTime).format("YYYY-MM-DD HH:mm:ss")}</div>
                     </div>
                   </div>
                 ))}

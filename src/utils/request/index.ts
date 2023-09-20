@@ -16,7 +16,7 @@ export interface Result<T> {
 // 导出Request类，可以用来自定义传递配置来创建实例
 export class Request {
   instance: AxiosInstance;
-  baseConfig: AxiosRequestConfig = { baseURL: apiUrl, timeout: 5000 };
+  baseConfig: AxiosRequestConfig = { baseURL: apiUrl, timeout: 20000 };
 
   constructor() {
     // 使用axios.create创建axios实例

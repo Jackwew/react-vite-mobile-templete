@@ -28,6 +28,7 @@
     "@types/qs": "^6.9.8",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
+    "@types/uuid": "^9.0.4",
     "@typescript-eslint/eslint-plugin": "^6.7.0",
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
@@ -47,6 +48,7 @@
     "prettier": "^3.0.3",
     "sass": "^1.67.0",
     "typescript": "^5.2.2",
+    "uuid": "^9.0.1",
     "vite": "^4.4.5"
   }
 }
